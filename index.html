@@ -3,170 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullah Al Mamun | AI Researcher</title>
+    <title>Abdullah Al Mamun | PhD Candidate</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">Mamun<span class="dot">.</span>AI</a>
+        <div class="container">
+            <a href="#" class="logo">A. Al Mamun</a>
             <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#work">Research</a></li>
                 <li><a href="#publications">Publications</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <a href="cv.pdf" class="btn-nav" download>Download CV <i class="fas fa-download"></i></a>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="profile-frame">
-                <img src="profile.jpg" alt="Abdullah Al Mamun" class="profile-img">
+    <header id="home" class="hero">
+        <div class="container hero-content">
+            <div class="profile-img-container">
+                <img src="profile.JPG" alt="Abdullah Al Mamun" class="profile-img">
             </div>
+
             <h1>Abdullah Al Mamun</h1>
-            <p class="hero-subtitle">PhD Candidate @ Griffith University & CSIRO</p>
-            <p class="hero-tagline">Advancing Agriculture through <span>Self-Supervised Learning</span> & <span>Computer Vision</span>.</p>
+            <h2>PhD Candidate at Griffith University & CSIRO</h2>
+            <p>Specializing in Computer Vision, Self-Supervised Learning, and Plant Disease Detection.</p>
             
-            <div class="social-bar">
-                <a href="https://scholar.google.com/citations?user=ji9OpZgAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-                <a href="mailto:a.mamun@griffith.edu.au"><i class="fas fa-envelope"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <div class="hero-btns">
+                <a href="cv.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                <a href="https://scholar.google.com/citations?user=ji9OpZgAAAAJ&hl=en" target="_blank" class="btn btn-secondary">
+                    <i class="fas fa-graduation-cap"></i> Scholar
+                </a>
             </div>
         </div>
-        
-        <a href="#about" class="scroll-down">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-        </a>
     </header>
 
-    <section class="stats-bar">
-        <div class="stat-item">
-            <h2>51+</h2>
-            <p>Publications</p>
-        </div>
-        <div class="stat-item">
-            <h2>510+</h2>
-            <p>Total Citations</p>
-        </div>
-        <div class="stat-item">
-            <h2>13</h2>
-            <p>h-index</p>
-        </div>
-        <div class="stat-item">
-            <h2>3.87</h2>
-            <p>CGPA (1st Class)</p>
-        </div>
-    </section>
-
-    <section id="about" class="section-padding">
+    <section id="about" class="section">
         <div class="container">
-            <div class="section-header">
-                <span class="tag">Biography</span>
-                <h2>The Researcher</h2>
-            </div>
-            <div class="about-content">
-                <p class="lead">
-                    I am a researcher bridging the gap between <strong>Deep Learning</strong> and <strong>Precision Agriculture</strong>. Currently pursuing my PhD at Griffith University, I am developing novel self-supervised learning algorithms to detect plant diseases with minimal labeled data.
-                </p>
-                <p>
-                    My journey began at <strong>Feni University</strong> as an Assistant Professor & Chairman, following my Master's in Engineering Science from Multimedia University, Malaysia. I have secured multiple grants, including the FRGS Malaysia, and my work is currently applied in collaboration with <strong>CSIRO</strong>.
-                </p>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am currently pursuing a <strong>Doctor of Philosophy (PhD)</strong> in the School of Information and Communication at <strong>Griffith University</strong>, Australia, associated with <strong>CSIRO</strong> for my research. My thesis, titled <em>"Plant Disease Detection Using Self-Supervised Learning,"</em> is supervised by Dr. Mohammad Awrangjeb.
+                    </p>
+                    <p>
+                        Prior to my PhD, I served as an <strong>Assistant Professor and Chairman</strong> of the EEE department at Feni University, Bangladesh. I hold a Master of Engineering Science (M.Phil.) from Multimedia University, Malaysia.
+                    </p>
+                    <p>
+                        My research interests include <strong>Image Processing, Artificial Intelligence, Deep Learning, and Self-supervised Learning</strong>. To date, I have published over <strong>51 articles</strong> with 500+ citations.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h3>51+</h3>
+                        <p>Publications</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>510+</h3>
+                        <p>Citations</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>3.87</h3>
+                        <p>B.Sc CGPA (1st Position)</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="publications" class="section-padding bg-light">
+    <section id="publications" class="section bg-light">
         <div class="container">
-            <div class="section-header">
-                <span class="tag">Portfolio</span>
-                <h2>Selected Publications</h2>
-            </div>
+            <h2 class="section-title">Selected Publications</h2>
+            <p class="subtitle">A selection of my recent work. See <a href="https://scholar.google.com" target="_blank">Google Scholar</a> for the full list.</p>
             
-            <div class="grid-layout">
-                <article class="paper-card">
-                    <div class="card-badge">AAAI 2025</div>
-                    <h3>StateSpace-SSL: Linear-Time Self-supervised Learning</h3>
-                    <p class="authors">A. A. Mamun, M. Zhang, et al.</p>
-                    <p class="abstract">Accepted in AgriAi26. A novel approach for plant disease detection reducing computational overhead.</p>
-                    <div class="card-footer">
-                        <a href="https://arxiv.org/abs/2512.09492" target="_blank">Read Paper <i class="fas fa-arrow-right"></i></a>
+            <div class="publication-list">
+                <div class="pub-item">
+                    <h3>StateSpace-SSL: Linear-Time Self-supervised Learning for Plant Disease Detection</h3>
+                    <p class="pub-authors"><strong>A. A. Mamun</strong>, M. Zhang, D. Ahmedt-Aristizabal, Z. Hayder, M. Awrangjeb</p>
+                    <p class="pub-venue"><em>Accepted in AgriAi26, co-located with AAAI (2025)</em></p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2512.09492" target="_blank">arXiv</a>
                     </div>
-                </article>
+                </div>
 
-                <article class="paper-card">
-                    <div class="card-badge">IEEE Access</div>
-                    <h3>Systematic Review: SSL for Plant Disease</h3>
-                    <p class="authors">A. Al Mamun, D. Ahmedt-Aristizabal, et al.</p>
-                    <p class="abstract">A comprehensive review of self-supervised learning methodologies in agricultural settings.</p>
-                    <div class="card-footer">
-                        <a href="#">DOI Link <i class="fas fa-arrow-right"></i></a>
+                <div class="pub-item">
+                    <h3>Plant Disease Detection Using Self-supervised Learning: A Systematic Review</h3>
+                    <p class="pub-authors"><strong>A. Al Mamun</strong>, D. Ahmedt-Aristizabal, M. Zhang, M. I. Hossen, Z. Hayder, M. Awrangjeb</p>
+                    <p class="pub-venue"><em>IEEE Access, 2024 (Impact Factor 3.4)</em></p>
+                    <div class="pub-links">
+                        <a href="#" target="_blank">DOI: 10.1109/ACCESS.2024.3475819</a>
                     </div>
-                </article>
+                </div>
 
-                <article class="paper-card">
-                    <div class="card-badge">Pattern Recognition</div>
-                    <h3>PSMamba: Progressive Vision Mamba</h3>
-                    <p class="authors">A. A. Mamun, M. Zhang, et al.</p>
-                    <p class="abstract">Leveraging Mamba architecture for progressive self-supervised vision tasks.</p>
-                    <div class="card-footer">
-                        <a href="https://arxiv.org/abs/2512.14309" target="_blank">View arXiv <i class="fas fa-arrow-right"></i></a>
+                <div class="pub-item">
+                    <h3>Transfer learning in agriculture: a review</h3>
+                    <p class="pub-authors">M. I. Hossen, M. Awrangjeb, S. Pan, <strong>A. A. Mamun</strong></p>
+                    <p class="pub-venue"><em>Artificial Intelligence Review, Springer, 2025 (Impact Factor 10.7)</em></p>
+                </div>
+
+                 <div class="pub-item">
+                    <h3>PSMamba: Progressive Self-supervised Vision Mamba for Plant Disease Recognition</h3>
+                    <p class="pub-authors"><strong>A. A. Mamun</strong>, M. Zhang, D. Ahmedt-Aristizabal, Z. Hayder, M. Awrangjeb</p>
+                    <p class="pub-venue"><em>Submitted to Pattern Recognition (arXiv 2025)</em></p>
+                    <div class="pub-links">
+                        <a href="https://arxiv.org/abs/2512.14309" target="_blank">arXiv</a>
                     </div>
-                </article>
-                
-                <article class="paper-card">
-                    <div class="card-badge">Springer</div>
-                    <h3>Transfer Learning in Agriculture</h3>
-                    <p class="authors">M. I. Hossen, A. A. Mamun, et al.</p>
-                    <p class="abstract">Published in Artificial Intelligence Review (IF 10.7). Analyzing transfer learning efficacy.</p>
-                    <div class="card-footer">
-                        <a href="#">Read Paper <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-            </div>
-            
-            <div class="center-btn">
-                <a href="https://scholar.google.com/citations?user=ji9OpZgAAAAJ&hl=en" class="btn-outline">View Google Scholar</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="work" class="section-padding">
+    <section id="experience" class="section">
         <div class="container">
-            <div class="section-header">
-                <span class="tag">Timeline</span>
-                <h2>Experience</h2>
-            </div>
-            
+            <h2 class="section-title">Academic & Professional Experience</h2>
             <div class="timeline">
-                <div class="timeline-row">
-                    <div class="timeline-time">2023 - Present</div>
-                    <div class="timeline-content">
+                
+                <div class="timeline-item">
+                    <div class="date">Oct 2023 - Present</div>
+                    <div class="content">
                         <h3>PhD Candidate</h3>
-                        <h4>Griffith University & CSIRO</h4>
-                        <p>Focusing on Self-Supervised Learning. Recipient of Top-Up Scholarship.</p>
+                        <p>Griffith University & CSIRO, Australia</p>
+                        <p><em>Recipient of Griffith University International Postgraduate Research Scholarship & CSIRO Top-Up Scholarship.</em></p>
                     </div>
                 </div>
-                <div class="timeline-row">
-                    <div class="timeline-time">2023</div>
-                    <div class="timeline-content">
-                        <h3>Assistant Professor & Chairman</h3>
-                        <h4>Feni University, Bangladesh</h4>
-                        <p>Led the EEE Department and founded the Research Association.</p>
+
+                <div class="timeline-item">
+                    <div class="date">Mar 2024 - Present</div>
+                    <div class="content">
+                        <h3>Casual Academic</h3>
+                        <p>School of Information and Communication, Griffith University</p>
                     </div>
                 </div>
-                <div class="timeline-row">
-                    <div class="timeline-time">2019 - 2021</div>
-                    <div class="timeline-content">
-                        <h3>M.Phil Researcher</h3>
-                        <h4>Multimedia University, Malaysia</h4>
-                        <p>Specialized in Lane Marking Detection using Deep Neural Networks.</p>
+
+                <div class="timeline-item">
+                    <div class="date">Jan 2023 - Sep 2023</div>
+                    <div class="content">
+                        <h3>Assistant Professor & Chairman (EEE)</h3>
+                        <p>Feni University, Bangladesh</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="date">Jan 2019 - Dec 2022</div>
+                    <div class="content">
+                        <h3>Lecturer & Chairman (In-charge)</h3>
+                        <p>Feni University, Bangladesh</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title text-white">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> a.mamun@griffith.edu.au</p>
+                    <p><i class="fas fa-university"></i> Griffith University, Queensland, Australia</p>
+                    <div class="social-links">
+                        <a href="https://scholar.google.com/citations?user=ji9OpZgAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Scholar</a>
+                        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="#"><i class="fab fa-researchgate"></i> ResearchGate</a>
                     </div>
                 </div>
             </div>
@@ -174,12 +179,7 @@
     </section>
 
     <footer>
-        <div class="container footer-content">
-            <h3>Ready to collaborate?</h3>
-            <p>Open for research collaborations and academic discussions.</p>
-            <a href="mailto:a.mamun@griffith.edu.au" class="btn-primary">Email Me</a>
-            <p class="copyright">&copy; 2026 Abdullah Al Mamun.</p>
-        </div>
+        <p>&copy; 2026 Abdullah Al Mamun. All rights reserved.</p>
     </footer>
 
 </body>
