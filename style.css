@@ -161,7 +161,7 @@ body {
 
 .stat { display: flex; flex-direction: column; }
 .stat .num { font-family: var(--font-heading); font-size: 2.5rem; color: #000; }
-.stat .label { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-light); }
+.stat .label { font-size: 0.85rem; text-transform: none; letter-spacing: 1px; color: var(--text-light); }
 
 .divider { border: 0; border-top: 1px solid #eee; margin: 60px 0; }
 
