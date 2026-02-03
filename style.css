@@ -3,7 +3,7 @@
     --bg-sidebar: #111111;      /* Nearly Black */
     --text-sidebar: #f4f4f4;    /* Off White */
     --bg-content: #ffffff;      /* White */
-    --accent: #d4af37;          /* Gold/Bronze for subtle elegance */
+    --accent: #d4af37;          /* Gold/Bronze for academic elegance */
     --text-main: #333333;       /* Dark Gray */
     --text-light: #666666;      /* Light Gray */
     --font-heading: 'Playfair Display', serif;
@@ -35,20 +35,21 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
 
+/* PROFILE PHOTO FIX */
 .profile-photo {
     width: 180px;
     height: 180px;
-    border-radius: 50%; /* Circle */
+    border-radius: 50%;
     object-fit: cover;
-    object-position: top center;  /* <--- THIS IS THE FIX */
+    object-position: top center; /* Fixes the hair cut-off */
     border: 4px solid rgba(255,255,255,0.1);
     margin-bottom: 30px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Optional: Adds a nice shadow */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .sidebar-info h1 {
@@ -90,11 +91,12 @@ body {
     align-items: center;
 }
 
+/* Download CV Button Style */
 .btn-primary {
     background: var(--accent);
     color: #000;
     padding: 12px 30px;
-    border-radius: 2px; /* Sharp edges for elegance */
+    border-radius: 2px;
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
@@ -120,7 +122,7 @@ body {
 
 /* --- 4. CONTENT (SCROLLABLE RIGHT) --- */
 .content {
-    margin-left: 35%; /* Matches sidebar width */
+    margin-left: 35%;
     width: 65%;
     padding: 80px 100px;
 }
@@ -135,7 +137,6 @@ body {
     display: inline-block;
 }
 
-/* Minimalist underline effect */
 .heading-decorative::after {
     content: '';
     display: block;
@@ -168,9 +169,14 @@ body {
 .divider { border: 0; border-top: 1px solid #eee; margin: 60px 0; }
 
 /* Publications */
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .pub-item {
     display: flex;
-    margin-bottom: 40px;
 }
 
 .pub-year {
@@ -179,6 +185,10 @@ body {
     color: #ccc;
     font-size: 1.2rem;
     padding-top: 5px;
+}
+
+.pub-details {
+    flex: 1;
 }
 
 .pub-title {
@@ -192,19 +202,32 @@ body {
 .pub-authors { color: var(--text-light); font-size: 0.95rem; margin-bottom: 5px; }
 .pub-venue { font-style: italic; color: var(--text-main); margin-bottom: 15px; }
 
-.link-arrow {
-    font-size: 0.9rem;
-    color: var(--accent); /* Uses the accent color for links */
-    text-decoration: none;
+/* NEW BUTTON STYLE FOR PAPERS */
+.btn-paper {
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 5px;
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.8rem;
     font-weight: 700;
-    border-bottom: 1px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-decoration: none;
 }
 
-.link-arrow:hover { border-bottom: 1px solid var(--accent); }
+.btn-paper:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    cursor: pointer;
+}
 
 /* Experience */
 .exp-grid { display: grid; gap: 40px; }
-
 .exp-item h4 { font-size: 1.2rem; margin-bottom: 5px; }
 .exp-org { display: block; font-weight: 700; color: #000; }
 .exp-date { display: block; font-size: 0.9rem; color: #888; margin-bottom: 10px; }
