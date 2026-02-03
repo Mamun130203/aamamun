@@ -6,7 +6,7 @@
     --accent: #d4af37;          /* Gold/Bronze */
     --text-main: #333333;       /* Dark Gray */
     --text-light: #666666;      /* Light Gray */
-    --btn-dark: #2c2c2c;        /* Button Dark Background */
+    --btn-dark: #333333;        /* Dark Grey for Buttons */
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Lato', sans-serif;
 }
@@ -38,7 +38,7 @@ body {
     text-align: center;
 }
 
-/* PROFILE PHOTO FIX */
+/* PROFILE PHOTO */
 .profile-photo {
     width: 180px;
     height: 180px;
@@ -167,7 +167,6 @@ body {
 
 /* Publications */
 .pub-list { display: flex; flex-direction: column; gap: 40px; }
-
 .pub-item { display: flex; }
 
 .pub-year {
@@ -191,27 +190,37 @@ body {
 .pub-authors { color: var(--text-light); font-size: 0.95rem; margin-bottom: 5px; }
 .pub-venue { font-style: italic; color: var(--text-main); margin-bottom: 15px; }
 
-/* --- BUTTON STYLE: DARK PILL --- */
+/* --- NEW BUTTON STYLE: MATCHING SCREENSHOT --- */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
 .btn-paper {
     display: inline-flex;
     align-items: center;
-    gap: 8px; /* Space between icon and text */
-    background-color: var(--btn-dark);
-    color: #fff;
-    padding: 8px 20px;
-    border-radius: 50px; /* Pill shape */
-    font-size: 0.85rem;
+    gap: 8px; /* Gap between icon and text */
+    background-color: var(--btn-dark); /* Dark Grey Background */
+    color: #fff !important; /* Force White Text */
+    padding: 8px 18px;
+    border-radius: 50px; /* Fully Rounded Pill */
+    font-size: 0.9rem;
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: none !important; /* REMOVES UNDERLINE */
     transition: all 0.3s ease;
-    margin-top: 8px;
     border: none;
+    line-height: 1;
 }
 
 .btn-paper:hover {
-    background-color: #000; /* Darker on hover */
+    background-color: #000; /* Darker Black on Hover */
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+.btn-paper i {
+    font-size: 0.9rem; /* Icon Size */
 }
 
 /* Experience */
